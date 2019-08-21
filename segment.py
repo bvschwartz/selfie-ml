@@ -52,14 +52,17 @@ def copy_images(label, set_name):
                 dst = test_dir + "/" + file
             copyfile(src, dst)
 
-copy_images("black_hair", "color")
-copy_images("red_hair", "color")
-copy_images("brown_hair", "color")
-copy_images("blond_hair", "color")
-copy_images("straight_hair", "curl")
-copy_images("curly_hair", "curl")
-copy_images("braid_hair", "curl")
-copy_images("black_race", "race")
-copy_images("white_race", "race")
-copy_images("asian_race", "race")
+def copy_all():
+    copy_images("black_hair", "color")
+    copy_images("red_hair", "color")
+    copy_images("brown_hair", "color")
+    copy_images("blond_hair", "color")
+    copy_images("straight_hair", "curl")
+    copy_images("curly_hair", "curl")
+    copy_images("braid_hair", "curl")
+    copy_images("black_race", "race")
+    copy_images("white_race", "race")
+    copy_images("asian_race", "race")
 
+if __name__ == "__main__":
+    copy_all()
